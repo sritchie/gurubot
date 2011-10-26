@@ -85,6 +85,24 @@ Add the subdomain hubot should connect to. If you web URL looks like
 
     % heroku config:add HUBOT_CAMPFIRE_ACCOUNT="mysubdomain"
 
+HipChat Variables
+------------------
+
+    % heroku config:add HUBOT_HIPCHAT_NAME=<Bot Name>              # gurubot user name
+
+    % heroku config:add HUBOT_HIPCHAT_TOKEN=<HipChat Token>        # admin token from hipchat admin account
+
+    % heroku config:add HUBOT_HIPCHAT_PASSWORD=<HipChat Password>  # password for gurubot user
+
+    % heroku config:add HUBOT_HIPCHAT_JID=<gurubot jid>            # jid from gurubot user
+
+http://labnotes.org/2011/10/25/hubot-does-hipchat/
+
+Other Variables
+---------------
+
+    % heroku config:add HUBOT_MSTRANSLATE_APIKEY=<from http://www.bing.com/developers/appids.aspx> # for speak me
+
 IRC Variables
 ------------------
 
@@ -101,9 +119,7 @@ You must have a Twilio account with credit and a number that can send and
 receive SMS messages.
 
     % heroku config:add HUBOT_SMS_FROM="+14156662671"
-
     % heroku config:add HUBOT_SMS_SID="AC5d10e5624da757326d12f8d31c08c20b"
-
     % heroku config:add HUBOT_SMS_TOKEN="4ada63e18146a204e468fb6289030231"
 
 After getting Hubot up and running, update the "SMS Request URL" for your
