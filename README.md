@@ -11,6 +11,15 @@ Playing with Hubot
 You'll need to install the necessary dependencies for hubot.  All of
 those dependencies are provided by [npm](http://npmjs.org).
 
+## Dependencies
+
+For homebrew, run the following at the shell:
+
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
+
+    brew install node.js
+    brew install redis
+
     % bin/hubot
 
 You'll see some startup output about where your scripts come from.
